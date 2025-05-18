@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="always">
+    <item
+        android:id="@+id/ruta_creada"
+        android:title="@string/rutas_creadas" />
+
+    <item
+        android:id="@+id/idioma"
+        android:title="@string/idioma"
+        />
+    <item
+        android:id="@+id/configuracion"
+        android:icon="@mipmap/ic_configuracion_foreground"
+        android:title="@string/configuracion" />
+</menu>

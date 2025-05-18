@@ -1,0 +1,113 @@
+<resources>
+    <string name="mi_ruta_ideal">Mi ruta ideal</string>
+    <string name="button" translatable="false">Button</string>
+    <string name="Inicio_sesion">Inicio de Sesión</string>
+    <string name="Email" translatable="false">Email</string>
+    <string name="Email_Example" translatable="false">user@example.com</string>
+    <string name="Password">Contraseña</string>
+    <string name="Password_Example" translatable="false">1234</string>
+    <string name="Iniciar_sesion">Iniciar Sesión</string>
+    <string name="DontRememberPassword" translatable="false">Se olvidó la contraseña?</string>
+    <string name="DontHaveAnAccount">No tiene cuenta? Regístrese</string>
+    <string name="Registro">Registro</string>
+    <string name="Registrate">Regístrate</string>
+    <string name="Terminos_condiciones">Acepto los términos y condiciones</string>
+    <string name="logo_description">Es el logo de nuestra aplicación</string>
+    <string name="menu_icon_description">Es el icono que abre el menu</string>
+    <string name="profile_icon_description">Es el icono que abre el menu del perfil</string>
+    <string name="add_icon_description">Es el icono que abre la pantalla para añadir ruta</string>
+    <string name="map_icon_description">Es el icono que abre la pantalla del mapa</string>
+    <string name="search_icon_description">Es el icono que abre la pantalla de búsqueda</string>
+    <string name="estoy_en_camino">Estoy en camino</string>
+    <string name="comienza_tu_ruta">Comienza tu ruta!</string>
+    <string name="boton_primer_camino" translatable="false">Camino Francés</string>
+    <string name="boton_segundo_camino" translatable="false">Camino Primitivo</string>
+    <string name="boton_tercer_camino" translatable="false">Camino del Norte</string>
+    <string name="ayuda_y_consejos">Ayuda y consejos</string>
+    <string name="todas_las_rutas">Todas las rutas</string>
+    <string name="donaciones">Donaciones</string>
+    <string name="hospedaje_y_albergues">Hospedaje y albergues</string>
+    <string name="restaurantes_y_comedores">Restaurantes y comedores</string>
+    <string name="configuracion">Configuración</string>
+    <string name="open" translatable="false">open</string>
+    <string name="close" translatable="false">close</string>
+    <string name="image_description" translatable="false">Image of a mountain road to be used for background</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="rutas_creadas">Rutas creadas</string>
+    <string name="mis_reservas">Mis reservas</string>
+    <string name="tu_plan" translatable="false">Tu plan</string>
+    <string name="premium_o_gratis" translatable="false">Premium o gratis</string>
+    <string name="plan_premium" translatable="false">Plan Premium</string>
+    <string name="plan_adventure" translatable="false">Plan Adventure</string>
+    <string name="idioma">Idioma</string>
+    <string name="espanol">Español</string>
+    <string name="english">Inglés</string>
+    <string name="profile_image_descrpition" translatable="false">Default profile image</string>
+    <string name="profile_divider" translatable="false">image used as divider between the profile image and the rest</string>
+    <string name="perfil_medico">Perfil médico</string>
+    <string name="return_button" translatable="false">Return</string>
+    <string name="search_hint">Busca Rutas</string>
+    <string name="ruta_adventure" translatable="false">Rutas Adventure:</string>
+    <string name="ruta_premium" translatable="false">Rutas Premium:</string>
+    <string name="nueve_euros" translatable="false">9€</string>
+    <string name="dieciocho_euros" translatable="false">18€</string>
+    <string name="personalizado">Personalizado</string>
+    <string name="selecciona_fecha">Selecciona fecha</string>
+    <string name="mostrar_info">Mostrar info</string>
+    <string name="preguntas_freq">Preguntas frequentes:</string>
+    <string name="pregunta1">¿Qué llevo?</string>
+    <string name="pregunta2">¿Como planifico las etapas?</string>
+    <string name="pregunta3">¿Hay transporte de mochilas?</string>
+    <string name="pregunta4">¿Cómo organizo mi camino?</string>
+    <string name="pregunta5">¿Qué más debo saber?</string>
+    <string name="informacion_perfil">Información del perfil</string>
+    <string name="permisos">Permisos</string>
+    <string name="soporte_tecnico">Soporte técnico</string>
+    <string name="text_punto_inicial">Introduce dirección inicial</string>
+    <string name="text_punto_final">Introduce dirección de destino</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="edad">Edad</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Teléfono</string>
+    <string name="aseguradora">Aseguradora</string>
+    <string name="grupo_sanguineo">Grupo Sanguíneo</string>
+    <string name="diabetes" translatable="false">Diabetes</string>
+    <string name="hint_nombre" translatable="false">Jane</string>
+    <string name="hint_apellidos" translatable="false">Doe</string>
+    <string name="hint_edad" translatable="false">25</string>
+    <string name="hint_direccion">Avenida...</string>
+    <string name="hint_telefono" translatable="false">765 67...</string>
+    <string name="hint_aseguradora" translatable="false">Adeslas</string>
+    <string name="hint_grupo_sanguineo" translatable="false">A+</string>
+    <string name="hint_diabetes" translatable="false">No</string>
+    <string name="enter_value">Ingrese un valor</string>
+    <string name="hospedaje_nombre" translatable="false">Hospedaje Ridge Inn</string>
+    <string name="comodidades">Comodidades</string>
+    <string name="direccion_hospedaje" translatable="false">Calle del Peregrino, 14
+Localidad: 27200 Palas de Rei, Lugo
+Provincia: Galicia, España</string>
+    <string name="telef_hospedaje">Número para reserva: +34 982 123 456</string>
+    <string name="restaurante_nombre" translatable="false">Restaurante Buena Flor</string>
+    <string name="direccion_restaurante" translatable="false">Plaza del Mercado, 5 Localidad: 26370 Navarrete, La Rioja
+Provincia: La Rioja, España</string>
+    <string name="telef_restaurante">Télefono para reserva de mesa: +34 941 456 789</string>
+    <string name="etapas">Etapas</string>w
+    <string name="mira_la_ruta_en_el_mapa">Ver en el mapa</string>
+    <string name="dificultad_alta">Dificultad: Alta</string>
+    <string name="distancia_primitivo">Distancia: 313.6km</string>
+    <string name="camino_primitivo">Camino Primitivo</string>
+    <string name="camino_del_norte">Camino del Norte</string>
+    <string name="camino_frances" translatable="false">Camino Francés</string>
+    <string name="distancia_frances">Distancia: 771.1km</string>
+    <string name="dificultad_media_alta">Dificultad: Media/Alta</string>
+    <string name="distancia_norte">Distancia: 475.3km</string>
+    <string name="dificultad_facil">Dificultad: Fácil</string>
+    <string name="ir_a_creaci_n_de_rutas">Ir a creación de rutas</string>
+    <string name="rutas_text">Las rutas que crees aparecerán aquí</string>
+    <string name="reservas_text">Tus reservas aparecerán aquí</string>
+    <string name="privacy">Privacidad</string>
+    <string name="dificultad">Dificultad</string>
+    <string name="tipo">Tipo</string>
+    <string name="nombre_de_la_ruta">Nombre de la ruta</string>
+</resources>

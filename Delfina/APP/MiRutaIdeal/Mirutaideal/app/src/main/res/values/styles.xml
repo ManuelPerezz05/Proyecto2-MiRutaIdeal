@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationTheme">
+        <item name="android:colorBackground">@color/backgroundBottomBarColor</item>
+        <item name="android:icon">@color/iconBottomBarColorSelected</item>
+    </style>
+    <style name="Button.Blue" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/backgroundBottomBarColor</item>
+    </style>
+</resources>

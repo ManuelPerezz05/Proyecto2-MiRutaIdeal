@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_new_logo_foreground"
+        android:label="@string/mi_ruta_ideal"
+        android:roundIcon="@mipmap/ic_new_logo_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiRutaIdeal"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PantallaInicioActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".PerfilActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".RegistroActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".MapActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".SearchActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".DonacionesActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".HospedajeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".Restaurante_Activity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".AyudasActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".ConfiguracionActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".AddActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".PerfilMedicoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".DetallesHospedajeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".DetallesRestauranteActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".CaminoPrimitivoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".CaminoFrancesActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".CaminoNorteActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".RutasCreadasActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+        <activity android:name=".PrivacyPolicyActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiRutaIdeal">
+        </activity>
+    </application>
+
+</manifest>

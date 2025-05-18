@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MiRutaIdeal" parent="Theme.MaterialComponents.Light">
+        <item name="actionBarStyle">@style/Custom.ActionBar</item>
+    </style>
+
+    <style name="Custom.ActionBar" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="background">@color/blueBar</item>
+        <item name="android:logo">@mipmap/ic_logo_foreground</item>
+    </style>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editRouteName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints="name"
+        android:inputType="text"
+        android:textColor="@color/backgroundBottomBarColor"
+        android:fontFamily="@font/font_inter"
+        android:hint="@string/nombre_de_la_ruta"/>
+
+    <EditText
+        android:id="@+id/editRouteDificultad"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/dificultad"
+        android:textColor="@color/backgroundBottomBarColor"
+        android:fontFamily="@font/font_inter"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:maxLines="4"/>
+    <EditText
+        android:id="@+id/editRouteTipo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/tipo"
+        android:textColor="@color/backgroundBottomBarColor"
+        android:fontFamily="@font/font_inter"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:maxLines="4"/>
+</LinearLayout>

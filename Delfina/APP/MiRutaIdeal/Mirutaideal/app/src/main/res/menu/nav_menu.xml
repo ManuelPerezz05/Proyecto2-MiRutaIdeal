@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="">
+    <item
+        android:id="@+id/ayuda"
+        android:icon="@mipmap/ic_help_foreground"
+        android:title="@string/ayuda_y_consejos" />
+    <item
+        android:id="@+id/rutas"
+        android:icon="@mipmap/ic_ruta_foreground"
+        android:title="@string/todas_las_rutas" />
+    <item
+        android:id="@+id/donaciones"
+        android:icon="@mipmap/ic_donaciones_foreground"
+        android:title="@string/donaciones" />
+    <item
+        android:id="@+id/hospedaje"
+        android:icon="@mipmap/ic_hospedaje_foreground"
+        android:title="@string/hospedaje_y_albergues" />
+    <item
+        android:id="@+id/restaurantes"
+        android:icon="@mipmap/ic_restaurant_foreground"
+        android:title="@string/restaurantes_y_comedores" />
+    <item
+        android:id="@+id/configuracion"
+        android:icon="@mipmap/ic_configuracion_foreground"
+        android:title="@string/configuracion" />
+</menu>
