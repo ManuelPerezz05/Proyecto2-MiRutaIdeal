@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Perfil - Tu Camino Ideal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+      background: url('img/camino_background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #00598c;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    header a img {
+      height: 40px;
+    }
+    .perfil-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: 40px auto;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+      text-align: center;
+      color: #00598c;
+    }
+    .perfil-info {
+      margin: 20px 0;
+    }
+    .perfil-info label {
+      font-weight: bold;
+    }
+    .perfil-info input, .perfil-info textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #00598c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #00466f;
+    }
+    .logout {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .logout button {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="img/logo_home.png" alt="Inicio Tu Camino Ideal" /></a>
+  </header>
+
+  <div class="perfil-container">
+    <h2><i class="fa fa-user"></i> Mi Perfil</h2>
+    <div class="perfil-info">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" />
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" />
+    </div>
+
+    <h3><i class="fa fa-heartbeat"></i> Datos Médicos</h3>
+    <div class="perfil-info">
+      <label for="grupo_sanguineo">Grupo sanguíneo:</label>
+      <input type="text" id="grupo_sanguineo" />
+      <label for="alergias">Alergias:</label>
+      <textarea id="alergias" rows="2"></textarea>
+      <label for="enfermedades_cronicas">Enfermedades crónicas:</label>
+      <textarea id="enfermedades_cronicas" rows="2"></textarea>
+      <label for="medicamentos">Medicamentos actuales:</label>
+      <textarea id="medicamentos" rows="2"></textarea>
+    </div>
+
+    <button onclick="guardarTodo()">Guardar cambios</button>
+
+    <div class="logout">
+      <button onclick="logout()">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <script>
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      alert("Debes iniciar sesión");
+      window.location.href = "login.html";
+    }
+
+    async function cargarPerfil() {
+      try {
+        const res = await fetch("http://localhost:3000/usuarios/me", {
+          headers: { Authorization: "Bearer " + token }
+        });
+        if (!res.ok) throw new Error("No se pudo cargar el perfil");
+        const data = await res.json();
+        document.getElementById("nombre").value = data.nombre || "";
+        document.getElementById("email").value = data.email || "";
+      } catch (err) {
+        alert(err.message);
+      }
+    }
+
+    async function cargarDatosMedicos() {
+      try {
+        const res = await fetch("http://localhost:3000/usuarios/me/datos_medicos", {
+          headers: { Authorization: "Bearer " + token }
+        });
+        if (!res.ok) return;
+        const data = await res.json();
+        document.getElementById("grupo_sanguineo").value = data.grupo_sanguineo || "";
+        document.getElementById("alergias").value = data.alergias || "";
+        document.getElementById("enfermedades_cronicas").value = data.enfermedades_cronicas || "";
+        document.getElementById("medicamentos").value = data.medicamentos || "";
+      } catch (err) {
+        console.error("Error al cargar datos médicos:", err);
+      }
+    }
+
+    async function guardarTodo() {
+      const nombre = document.getElementById("nombre").value;
+      const email = document.getElementById("email").value;
+
+      const datosMedicos = {
+        grupo_sanguineo: document.getElementById("grupo_sanguineo").value,
+        alergias: document.getElementById("alergias").value,
+        enfermedades_cronicas: document.getElementById("enfermedades_cronicas").value,
+        medicamentos: document.getElementById("medicamentos").value
+      };
+
+      try {
+        const perfilRes = await fetch("http://localhost:3000/usuarios/me", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + token
+          },
+          body: JSON.stringify({ nombre, email })
+        });
+
+        const medRes = await fetch("http://localhost:3000/usuarios/me/datos_medicos", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + token
+          },
+          body: JSON.stringify(datosMedicos)
+        });
+
+        if (perfilRes.ok && medRes.ok) {
+          alert("Datos actualizados correctamente");
+        } else {
+          alert("Hubo un error al guardar los datos");
+        }
+      } catch (err) {
+        alert("Error al guardar los datos: " + err.message);
+      }
+    }
+
+    function logout() {
+      localStorage.removeItem("token");
+      window.location.href = "login.html";
+    }
+
+    window.onload = () => {
+      cargarPerfil();
+      cargarDatosMedicos();
+    };
+  </script>
+</body>
+</html>

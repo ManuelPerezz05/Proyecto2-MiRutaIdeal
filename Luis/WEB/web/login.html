@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Tu Camino Ideal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+       <!-- Favicons-->
+    <link rel="icon" href="img/logo_home.png" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/logo_home.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/logo_home.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/logo_home.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/logo_home.png">
+    <!-- GOOGLE WEB FONT -->
+
+    
+    
+    <style type="text/css">@font-face {font-family:Mulish;font-style:normal;font-weight:400;src:url(/cf-fonts/v/mulish/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:400;src:url(/cf-fonts/v/mulish/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:400;src:url(/cf-fonts/v/mulish/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:400;src:url(/cf-fonts/v/mulish/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:400;src:url(/cf-fonts/v/mulish/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:500;src:url(/cf-fonts/v/mulish/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:500;src:url(/cf-fonts/v/mulish/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:500;src:url(/cf-fonts/v/mulish/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:500;src:url(/cf-fonts/v/mulish/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:500;src:url(/cf-fonts/v/mulish/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:700;src:url(/cf-fonts/v/mulish/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:700;src:url(/cf-fonts/v/mulish/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:700;src:url(/cf-fonts/v/mulish/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:700;src:url(/cf-fonts/v/mulish/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Mulish;font-style:normal;font-weight:700;src:url(/cf-fonts/v/mulish/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900display=swap" rel="stylesheet">
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff8d6844523c3f20e7f6f586-|49"></script><!-- ✅ Font Awesome recomendado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-dYgRrN5YrXwKR4vbJX/7UcbOZ4EtGmZ69EZs+0vO9AjS+iCBkOOPSpf2b1HX0S6qjMokGLUcvhZ8e8A5Yj3yRg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- COMMON CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff8d6844523c3f20e7f6f586-|49"></script><link href="css/blog.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <link href="css/vendors.min.css" rel="stylesheet">
+
+    <!-- SPECIFIC CSS -->
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff8d6844523c3f20e7f6f586-|49"></script><link href="css/timeline.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff8d6844523c3f20e7f6f586-|49"></script><link href="css/slick.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff8d6844523c3f20e7f6f586-|49"></script><link href="css/slick-theme.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <!-- CUSTOM CSS -->
+    <link href="css/custom.min.css?v=1.16" rel="stylesheet">
+
+    <link href="css/cookieconsent.css" rel="stylesheet">
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="ikmYwybDqcriQ3ScywgAXA" async type="ff8d6844523c3f20e7f6f586-text/javascript"></script>
+    <script src="js/cookieconsent.js" type="ff8d6844523c3f20e7f6f586-text/javascript"></script>
+    <script type="text/javascript">
+function setSessionCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getSessionCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-476330222" type="ff8d6844523c3f20e7f6f586-text/javascript"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-476330222');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RM7XGY7KQJ" type="ff8d6844523c3f20e7f6f586-text/javascript"></script>
+<script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    // Variable para indicar que queremos permitir todo
+    localStorage.cmGoogleGranted = true;
+
+    // Establecer los consentimientos en localStorage
+    localStorage.ad_storage = "granted";
+    localStorage.analytics_storage = "granted";
+    localStorage.ad_personalization = "granted";
+    localStorage.ad_user_data = "granted";
+
+    // Configurar gtag
+    gtag("consent", "default", {
+        ad_storage: "granted",
+        analytics_storage: "granted",
+        ad_user_data: "granted",
+        ad_personalization: "granted",
+        personalization_storage: "granted",
+        functionality_storage: "granted",
+        security_storage: "granted",
+    });
+
+    // Inicializar GA
+    gtag("js", new Date());
+    gtag("config", "G-RM7XGY7KQJ");
+
+    // Enviar evento de actualización de consentimientos
+    window.dataLayer.push({
+        event: "update_consent",
+        ad_storage: localStorage.ad_storage,
+        analytics_storage: localStorage.analytics_storage,
+        ad_personalization: localStorage.ad_personalization,
+        ad_user_data: localStorage.ad_user_data,
+    });
+</script>
+<!-- Google Tag Manager head -->
+<script type="text/javascript">
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-N2L4ZL5");
+</script>
+<!-- End Google Tag Manager -->
+
+    <script type="text/javascript">
+        let cookieConsent;
+
+        // Primero definimos las traducciones
+        const translations = {
+            'es': {
+                cookieTitle: "Configuración de Cookies",
+                cookieMessage: "Utilizamos cookies propias y de terceros para mejorar nuestros servicios.",
+                configure: "Configurar",
+                reject: "Rechazar",
+                acceptAll: "Aceptar todas",
+                moreInfo: "Más información",
+                modalTitle: "Preferencias de Cookies",
+                modalDesc: "Seleccione qué tipo de cookies desea aceptar:",
+                technicalTitle: "Cookies técnicas necesarias",
+                technicalDesc: "Son esenciales para el funcionamiento básico del sitio web.",
+                analyticsTitle: "Cookies analíticas",
+                analyticsDesc: "Nos ayudan a mejorar nuestro sitio web analizando el uso.",
+                marketingTitle: "Cookies de marketing",
+                marketingDesc: "Se utilizan para ofrecer publicidad relevante.",
+                savePreferences: "Guardar preferencias"
+            },
+            'en': {
+                cookieTitle: "Cookie Settings",
+                cookieMessage: "We use our own and third-party cookies to improve our services.",
+                configure: "Configure",
+                reject: "Reject",
+                acceptAll: "Accept all",
+                moreInfo: "More information",
+                modalTitle: "Cookie Preferences",
+                modalDesc: "Select which types of cookies you want to accept:",
+                technicalTitle: "Necessary technical cookies",
+                technicalDesc: "They are essential for the basic functioning of the website.",
+                analyticsTitle: "Analytical cookies",
+                analyticsDesc: "They help us improve our website by analyzing usage.",
+                marketingTitle: "Marketing cookies",
+                marketingDesc: "They are used to deliver relevant advertising.",
+                savePreferences: "Save preferences"
+            },
+            'fr': {
+                cookieTitle: "Paramètres des Cookies",
+                cookieMessage: "Nous utilisons nos propres cookies et ceux de tiers pour améliorer nos services.",
+                configure: "Configurer",
+                reject: "Refuser",
+                acceptAll: "Tout accepter",
+                moreInfo: "Plus d'informations",
+                modalTitle: "Préférences des Cookies",
+                modalDesc: "Sélectionnez les types de cookies que vous souhaitez accepter :",
+                technicalTitle: "Cookies techniques nécessaires",
+                technicalDesc: "Ils sont essentiels au fonctionnement de base du site web.",
+                analyticsTitle: "Cookies analytiques",
+                analyticsDesc: "Ils nous aident à améliorer notre site en analysant l'utilisation.",
+                marketingTitle: "Cookies marketing",
+                marketingDesc: "Ils sont utilisés pour diffuser des publicités pertinentes.",
+                savePreferences: "Enregistrer les préférences"
+            },
+            'de': {
+                cookieTitle: "Cookie-Einstellungen",
+                cookieMessage: "Wir verwenden eigene und Drittanbieter-Cookies, um unsere Dienste zu verbessern.",
+                configure: "Konfigurieren",
+                reject: "Ablehnen",
+                acceptAll: "Alle akzeptieren",
+                moreInfo: "Weitere Informationen",
+                modalTitle: "Cookie-Einstellungen",
+                modalDesc: "Wählen Sie aus, welche Arten von Cookies Sie akzeptieren möchten:",
+                technicalTitle: "Notwendige technische Cookies",
+                technicalDesc: "Sie sind für die grundlegende Funktionalität der Website essentiell.",
+                analyticsTitle: "Analyse-Cookies",
+                analyticsDesc: "Sie helfen uns, unsere Website durch Nutzungsanalysen zu verbessern.",
+                marketingTitle: "Marketing-Cookies",
+                marketingDesc: "Sie werden verwendet, um relevante Werbung anzuzeigen.",
+                savePreferences: "Einstellungen speichern"
+            },
+            'pt': {
+                cookieTitle: "Configurações de Cookies",
+                cookieMessage: "Utilizamos cookies próprios e de terceiros para melhorar nossos serviços.",
+                configure: "Configurar",
+                reject: "Rejeitar",
+                acceptAll: "Aceitar todos",
+                moreInfo: "Mais informações",
+                modalTitle: "Preferências de Cookies",
+                modalDesc: "Selecione quais tipos de cookies deseja aceitar:",
+                technicalTitle: "Cookies técnicos necessários",
+                technicalDesc: "São essenciais para o funcionamento básico do site.",
+                analyticsTitle: "Cookies analíticos",
+                analyticsDesc: "Nos ajudam a melhorar nosso site analisando o uso.",
+                marketingTitle: "Cookies de marketing",
+                marketingDesc: "São utilizados para oferecer publicidade relevante.",
+                savePreferences: "Salvar preferências"
+            },
+            'it': {
+                cookieTitle: "Impostazioni Cookie",
+                cookieMessage: "Utilizziamo cookie propri e di terze parti per migliorare i nostri servizi.",
+                configure: "Configura",
+                reject: "Rifiuta",
+                acceptAll: "Accetta tutti",
+                moreInfo: "Maggiori informazioni",
+                modalTitle: "Preferenze Cookie",
+                modalDesc: "Seleziona quali tipi di cookie vuoi accettare:",
+                technicalTitle: "Cookie tecnici necessari",
+                technicalDesc: "Sono essenziali per il funzionamento base del sito web.",
+                analyticsTitle: "Cookie analitici",
+                analyticsDesc: "Ci aiutano a migliorare il nostro sito analizzando l'utilizzo.",
+                marketingTitle: "Cookie di marketing",
+                marketingDesc: "Vengono utilizzati per mostrare pubblicità pertinente.",
+                savePreferences: "Salva preferenze"
+            }
+        };
+
+        window.addEventListener("load", function() {
+            const currentLang = 'es' || 'es'; // 'es' como fallback
+            const t = translations[currentLang]; // Obtener las traducciones para el idioma actual
+            const urls = {
+                'es': '/politica-de-cookies/',
+                'en': '/en/cookies-policy/',
+                'fr': '/fr/politique-cookies/',
+                'pt': '/pt/politica-cookie/',
+                'de': '/de/cookie-politik/',
+                'it': '/it/politica-cookie/'
+            };
+            const url = urls[currentLang];
+            const cookieMessages = {
+                'es': `Utilizamos cookies propias y de terceros para analizar tu navegación, personalizar contenidos y mostrar anuncios adaptados a tus intereses. Esto nos permite crear un perfil basado en tus preferencias para ofrecerte productos relevantes, tanto en nuestra web como en otros sitios. Para más información, consulta nuestra <a style='color:#1f5da6;' href='${url}'>Política de cookies.</a>`,
+
+                'en': `We use our own and third-party cookies to analyze your browsing, customize content, and display ads tailored to your interests. This allows us to create a profile based on your preferences to offer you relevant products, both on our website and elsewhere. For more information, please read our <a style='color:#1f5da6;' href='${url}'>Cookie Policy.`,
+
+                'fr': `Nous utilisons nos propres cookies et ceux de tiers pour analyser votre navigation, personnaliser le contenu et afficher des publicités adaptées à vos intérêts. Cela nous permet de créer un profil basé sur vos préférences pour vous proposer des produits pertinents, sur notre site et ailleurs. Pour plus d'informations, consultez notre <a style='color:#1f5da6;' href='${url}'>Politique de cookies.</a>`,
+
+                'de': `Wir verwenden eigene und Drittanbieter-Cookies, um Ihr Surfverhalten zu analysieren, Inhalte zu personalisieren und interessenbezogene Werbung anzuzeigen. Dies ermöglicht uns, ein auf Ihren Präferenzen basierendes Profil zu erstellen, um Ihnen relevante Produkte auf unserer Website und anderswo anzubieten. Weitere Informationen finden Sie in unserer <a style='color:#1f5da6;' href='${url}'>Cookie-Richtlinie.</a>`,
+
+                'pt': `Utilizamos cookies próprios e de terceiros para analisar sua navegação, personalizar conteúdo e exibir anúncios adaptados aos seus interesses. Isso nos permite criar um perfil baseado em suas preferências para oferecer produtos relevantes, tanto em nosso site quanto em outros lugares. Para mais informações, consulte nossa <a style='color:#1f5da6;' href='${url}'>Política de Cookies.</a>`,
+
+                'it': `Utilizziamo cookie propri e di terze parti per analizzare la tua navigazione, personalizzare i contenuti e mostrare pubblicità in base ai tuoi interessi. Questo ci permette di creare un profilo basato sulle tue preferenze per offrirti prodotti pertinenti, sia sul nostro sito che altrove. Per maggiori informazioni, consulta la nostra <a style='color:#1f5da6;' href='${url}'>Policy sui cookie.</a>`
+            };
+            const cm = cookieMessages[currentLang];
+
+            cookieConsent = window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#fff",
+                        "text": "#222"
+                    },
+                    "button": {
+                        "background": "#222",
+                        "text": "#fff"
+                    }
+                },
+                "position": "bottom",
+                "static": true,
+                "type": "opt-in",
+                "layout": "custom",
+                "layouts": {
+                    "custom": `<div class="row">
+								<div class="col">
+									<div class="cc-message"><i class="fas fa-info-circle mr-2"></i>${cm}</div>
+									<div class="cc-compliance cc-custom">
+										<button class="cc-btn cc-configure" onclick="openCookieModal()">${t.configure}</button>
+										<button class="cc-btn cc-allow" onclick="acceptAllCookies()">${t.acceptAll}</button>
+									</div>
+								</div>
+							</div>
+                    `
+                },
+                "content": {
+                    "message": t.cookieMessage,
+                    "link": t.moreInfo,
+                    "href": "https://tubuencamino.com/politica-de-cookies/"
+                },
+                onPopupClose: function() {
+                    const banner = document.querySelector('.cc-window');
+                    if (banner) {
+                        banner.remove();
+                    }
+                }
+            });
+
+            // Crear el modal de configuración con las traducciones
+            const modalHtml = `
+                <div id="cookieModal" class="cookie-modal">
+                    <div class="cookie-modal-content">
+                        <h3>${t.modalTitle}</h3>
+                        <p>${t.modalDesc}</p>
+                        <div class="cookie-options">
+                            <label class="cookie-option">
+                                <input type="checkbox" checked disabled>
+                                <div class="content">
+                                    <span>${t.technicalTitle}</span>
+                                    <small>${t.technicalDesc}</small>
+                                </div>
+                            </label>
+                            <label class="cookie-option">
+                                <input type="checkbox" id="analyticsCheck">
+                                <div class="content">
+                                    <span>${t.analyticsTitle}</span>
+                                    <small>${t.analyticsDesc}</small>
+                                </div>
+                            </label>
+                            <label class="cookie-option">
+                                <input type="checkbox" id="marketingCheck">
+                                <div class="content">
+                                    <span>${t.marketingTitle}</span>
+                                    <small>${t.marketingDesc}</small>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="row justify-content-end">
+                            <button onclick="saveCookiePreferences()" class="btn btn_1 mr-3">${t.savePreferences}</button>
+                        </div>
+                    </div>
+                </div>`;
+            document.body.insertAdjacentHTML('beforeend', modalHtml);
+        });
+
+        function forceCloseBanner() {
+            // Intentar todos los métodos posibles para cerrar el banner
+            if (cookieConsent) {
+                cookieConsent.setStatus('allow');
+                cookieConsent.close();
+            }
+
+            const banner = document.querySelector('.cc-window');
+            if (banner) {
+                banner.style.display = 'none';
+                banner.remove();
+            }
+
+            // Establecer cookie para evitar que vuelva a aparecer
+            const date = new Date();
+            date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+            document.cookie = "cookieconsent_status=allow; expires=" + date.toUTCString() + "; path=/";
+        }
+
+        function openCookieModal() {
+            document.getElementById('cookieModal').style.display = 'flex';
+        }
+
+        function saveCookiePreferences() {
+            const analytics = document.getElementById('analyticsCheck').checked;
+            const marketing = document.getElementById('marketingCheck').checked;
+
+            setConsentCookie('technical', true);
+            if (analytics) {
+                setConsentCookie('analytics', true);
+            } else {
+                setConsentCookie('analytics', false);
+            }
+
+            if (marketing) {
+                setConsentCookie('marketing', true);
+            } else {
+                setConsentCookie('marketing', false);
+            }
+
+            setConsentCookie('preferences_set', 'true');
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted',
+                'functionality_storage': 'granted',
+                'personalization_storage': 'granted'
+            });
+            document.getElementById('cookieModal').style.display = 'none';
+            forceCloseBanner();
+            checkAndLoadServices(); // Añadir esta línea
+        }
+
+        function acceptAllCookies() {
+            if (cookieConsent) {
+                cookieConsent.setStatus('allow');
+                cookieConsent.close();
+            }
+            document.querySelector('.cc-window').style.display = 'none';
+
+            // Activar todas las cookies
+            setConsentCookie('technical', true);
+            setConsentCookie('analytics', true);
+            setConsentCookie('marketing', true);
+            setConsentCookie('preferences_set', 'true'); // Añadir esta línea
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted',
+                'functionality_storage': 'granted',
+                'personalization_storage': 'granted'
+            });
+            checkAndLoadServices();
+            forceCloseBanner();
+        }
+
+        function rejectAllCookies() {
+            if (cookieConsent) {
+                cookieConsent.setStatus('deny');
+                cookieConsent.close();
+            }
+            document.querySelector('.cc-window').style.display = 'none';
+
+            // Desactivar cookies opcionales
+            setConsentCookie('technical', true); // Las técnicas siempre true
+            setConsentCookie('analytics', false);
+            setConsentCookie('marketing', false);
+            setConsentCookie('preferences_set', 'true'); // Añadir esta línea
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted',
+                'functionality_storage': 'granted',
+                'personalization_storage': 'granted'
+            });
+            removeThirdPartyScripts(); // Añadir esta línea para limpiar scripts
+            forceCloseBanner();
+        }
+
+        function setConsentCookie(type, value) {
+            const date = new Date();
+            date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 año
+            document.cookie = `cookie_consent_${type}=${value}; expires=${date.toUTCString()}; path=/; SameSite=None; Secure`;
+        }
+
+        // Add a state management object to track loaded services
+        const serviceState = {
+            isTrustpilotLoaded: false,
+            isMailchimpLoaded: false
+        };
+
+        // Modify loadTrustpilot to check state
+        function loadTrustpilot() {
+            if (serviceState.isTrustpilotLoaded || window.TrustpilotObject) {
+                return; // Already loaded
+            }
+
+            (function(w, d, s, r, n) {
+                w.TrustpilotObject = n;
+                w[n] = w[n] || function() {
+                    (w[n].q = w[n].q || []).push(arguments)
+                };
+                const a = d.createElement(s);
+                a.async = 1;
+                a.src = r;
+                a.type = 'text/java' + s;
+                a.onload = () => {
+                    serviceState.isTrustpilotLoaded = true;
+                    window.tp('register', 'O8P0pZfw599VqIUR');
+                };
+                const f = d.getElementsByTagName(s)[0];
+                f.parentNode.insertBefore(a, f);
+            })(window, document, 'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+        }
+
+        // Modify loadMailchimp to check state
+        function loadMailchimp() {
+            if (serviceState.isMailchimpLoaded || document.getElementById('mcjs')) {
+                return; // Already loaded
+            }
+
+            const script = document.createElement('script');
+            script.id = 'mcjs';
+            script.async = true;
+            script.src = 'https://chimpstatic.com/mcjs-connected/js/users/15a18f742563467350e696118/c95bc505c4b550ceb83df7432.js';
+            script.onload = () => {
+                serviceState.isMailchimpLoaded = true;
+            };
+            document.head.appendChild(script);
+        }
+
+        // Modify checkAndLoadServices to include initial consent check
+        function checkAndLoadServices() {
+            // First check if preferences are already set
+            const preferencesSet = getCookie('cookie_consent_preferences_set');
+            if (!preferencesSet) {
+                return; // Don't load anything if preferences haven't been set
+            }
+
+            const marketingConsent = getCookie('cookie_consent_marketing') === 'true';
+            const analyticsConsent = getCookie('cookie_consent_analytics') === 'true';
+
+            if (!marketingConsent && !analyticsConsent) {
+                removeThirdPartyScripts();
+                return;
+            }
+
+            if (marketingConsent && !serviceState.isMailchimpLoaded) {
+                loadMailchimp();
+            }
+
+            if (analyticsConsent) {
+                if (!serviceState.isTrustpilotLoaded) {
+                    loadTrustpilot();
+                }
+            }
+        }
+
+        // Modify removeThirdPartyScripts to reset state
+        function removeThirdPartyScripts() {
+            // Reset all state
+            Object.keys(serviceState).forEach(key => {
+                serviceState[key] = false;
+            });
+
+            // Remove Mailchimp
+            const mcScript = document.getElementById('mcjs');
+            if (mcScript) {
+                mcScript.remove();
+            }
+
+            // Remove Trustpilot
+            if (window.TrustpilotObject) {
+                delete window.TrustpilotObject;
+                delete window.tp;
+            }
+
+            // Remove all third-party scripts
+            const scripts = document.getElementsByTagName('script');
+            for (let script of scripts) {
+                if (script.src.includes('trustpilot') ||
+                    script.src.includes('chimpstatic')) {
+                    script.remove();
+                }
+            }
+        }
+
+        function getCookie(name) {
+            const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            return match ? match[2] : null;
+        }
+        // Modify window load event to check consent status first
+        window.addEventListener('load', function() {
+            const preferencesSet = getCookie('cookie_consent_preferences_set');
+            if (preferencesSet) {
+                checkAndLoadServices();
+            }
+        });
+    </script>
+
+    <style>
+        .cc-revoke {
+            display: none !important;
+        }
+
+        /* Estilos para el contenedor principal del banner */
+        /* Estilos para el contenedor principal del banner */
+        .cc-window {
+            width: 40dvw !important;
+            max-width: 95dvw !important;
+            margin: 0 auto !important;
+            border-radius: 12px !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+            position: fixed !important;
+            top: 35dvh !important;
+            left: 40% !important;
+            transform: translateX(-50%) !important;
+            padding: 1.5rem !important;
+            height: fit-content;
+            background: white !important;
+        }
+
+        /* Media query para tablets y escritorio */
+        @media screen and (max-width: 1180px) {
+            .cc-window {
+                top: auto !important;
+                /* Anula el top */
+                bottom: 0px !important;
+                /* Posiciona en la parte inferior */
+                width: 100% !important;
+                left: 50% !important;
+                padding: 1rem !important;
+            }
+
+            .cc-message {
+                font-size: 14px !important;
+            }
+
+            .cc-compliance.cc-custom {
+                width: 100% !important;
+                gap: 0.25rem !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+            }
+
+            .cc-btn {
+                padding: 0.5rem 0.75rem !important;
+                font-size: 13px !important;
+                min-width: auto !important;
+            }
+
+            /* Los botones Configurar y Rechazar en la primera fila */
+            .cc-configure,
+            .cc-deny {
+                flex: 1 1 calc(50% - 0.25rem) !important;
+                min-width: 0 !important;
+            }
+
+            /* Botón Aceptar todas en una nueva línea */
+            .cc-allow {
+                flex: 1 1 100% !important;
+                order: 1 !important;
+            }
+        }
+
+        /* Media query para móviles muy pequeños */
+        @media screen and (max-width: 360px) {
+            .cc-window {
+                top: auto !important;
+                /* Anula el top */
+                bottom: 1rem !important;
+                /* Ajusta la posición inferior */
+                width: calc(100% - 1rem) !important;
+                padding: 1rem !important;
+            }
+
+            .cc-compliance.cc-custom {
+                flex-direction: column !important;
+                gap: 0.5rem !important;
+            }
+
+            .cc-btn {
+                width: 100% !important;
+                padding: 0.5rem !important;
+            }
+        }
+
+        /* Resto de estilos sin cambios */
+        .cc-message {
+            margin-bottom: 1rem !important;
+            text-align: start !important;
+        }
+
+        .cc-compliance.cc-custom {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 0.5rem !important;
+            justify-content: center !important;
+            flex-wrap: wrap !important;
+        }
+
+        .cc-btn {
+            flex: 1 !important;
+            border-radius: 6px !important;
+            text-align: center !important;
+        }
+
+        .cc-configure {
+            background-color: #f5f5f5 !important;
+            color: #222 !important;
+        }
+
+        .cc-deny {
+            background-color: #f5f5f5 !important;
+            color: #222 !important;
+        }
+
+        .cc-allow {
+            background-color: #facd01 !important;
+            color: #000 !important;
+        }
+
+        .cookie-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cookie-modal-content {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .cookie-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .cookie-option {
+            display: grid;
+            grid-template-columns: 24px 1fr;
+            gap: 8px;
+            padding: 12px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            align-items: start;
+        }
+
+        .cookie-option input[type="checkbox"] {
+            margin: 4px 0 0 0;
+            width: 16px;
+            height: 16px;
+        }
+
+        .cookie-option .content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .cookie-option span {
+            font-weight: 500;
+            font-size: 14px;
+            color: #222;
+        }
+
+        .cookie-option small {
+            color: #666;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    </style>
+
+
+
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcmwi8nAAAAANp5YsR6Kw2LSgIKd6GMDrsGpvXb" type="ff8d6844523c3f20e7f6f586-text/javascript"></script>
+    <!--<script type="text/javascript">
+		var kameleoonLoadingTimeout = 1000;
+		window.kameleoonQueue = window.kameleoonQueue || [];
+		window.kameleoonStartLoadTime = new Date().getTime();
+		if (! document.getElementById("kameleoonLoadingStyleSheet") && !window.kameleoonDisplayPageTimeOut)
+		{
+			var kameleoonS = document.getElementsByTagName("script")[0];
+			var kameleoonCc = "* { visibility: hidden !important; background-image:none !important; }";
+			var kameleoonStn = document.createElement("style");
+			kameleoonStn.type = "text/css";
+			kameleoonStn.id = "kameleoonLoadingStyleSheet";
+			if (kameleoonStn.styleSheet)
+			{
+				kameleoonStn.styleSheet.cssText = kameleoonCc;
+			}else{
+				kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+			}
+			kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+			window.kameleoonDisplayPage = function(fromEngine){
+				if (!fromEngine){
+					window.kameleoonTimeout = true;
+				}
+				if (kameleoonStn.parentNode){
+					kameleoonStn.parentNode.removeChild(kameleoonStn);
+				}
+			}
+			window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+		}
+	</script>
+	<script type="text/javascript" src="//whnaevi0fm.kameleoon.io/kameleoon.js" async="true" fetchpriority="high"></script>-->
+  
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+      background: url('img/home/banner-home-catedral.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .login-container img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #00598c;
+    }
+    .login-container .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .login-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00598c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-container button:hover {
+      background-color: #00466f;
+    }
+    .login-container .footer-link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .login-container .footer-link a {
+      color: #00598c;
+      text-decoration: none;
+    }
+    .login-container .footer-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+    	<!-- Google Tag Manager (noscript) body -->
+	<noscript><iframe src="https://www.googletagmanager.com/"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	    
+
+    
+    <div class="layer"></div>
+
+
+    <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-3">
+                <div id="logo_home">
+
+                    <a href="index.html" title="agencia camino de santiago">Tu Buen Camino</a>
+                </div>
+            </div>
+            <nav class="col-6 col-sm-9">
+                <a href="contacto/" class="d-block d-lg-none header_mail"><i class="fa fa-envelope"></i></a>
+                <a href="tel:+34981112147" class="d-block d-lg-none header_tel"><i class="fa fa-phone"></i></a>
+                <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                <div class="main-menu">
+                    <div id="header_menu">
+                        <img src="img/logo_home.png" width="160" alt="Tu Buen Camino">
+                    </div>
+                    <a href="javascript:void(0);" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+
+                    <ul class="d-none d-lg-block">
+
+  <li><a class="show-submenu"></i></a><ul><li class="li_rutas">Rutas Adventure</li><li><a href="camino-frances-desde-sarria-adventure.html" title="Camino Francés ">Camino Francés</a></li><li><a href="-adventure.html" title="Camino del Norte">Camino del Norte</a></li><li><a href="camino-portugues-desde-tui-adventure.html" title="Camino Primitivo">Camino Primitivo</a></li><li><a href="nuestras-rutas-adventure.html">Más rutas Adventure...</a></li></ul></li>
+  <li><a class="show-submenu" href="caminos/">Caminos <i class="icon-down-open-mini"></i></a><ul><li><a href="camino-frances.html" title="Camino Francés">Camino Francés</a></li><li><a href="camino-primitivo.html" title="Camino Primitivo">Camino Primitivo</a></li><li><a href="camino-norte.html" title="Camino Norte">Camino Norte</a></li></li><li><a href="camino-de-santiago-en-bici.html" title="Camino en Bicicleta">Camino en Bicicleta</a></li></ul></li>
+  <li><a class="show-submenu" href="servicios.html">Servicios <i class="icon-down-open-mini"></i></a><ul><li><a href="desayunos.html">Desayunos</a></li><li><a href="cenas.html">Cenas</a></li><li><a href="traslados-puntos-inicio.html">Traslado a los puntos de inicio</a></li><li><a href="transporte-mochilas.html">Transporte de mochilas</a></li><li><a href="traslados-aeropuerto-santiago.html">Traslados al aeropuerto de Santiago</a></li><li><a href="garaje-santiago.html">Garaje en Santiago</a></li></ul></li>
+  <li><a class="show-Fsubmenu" href="contacto.html">Contacto</a></li>
+  <li class="show-submenu"><a href="#" class="show-submenu"><i class="fa fa-globe"></i></a><ul><li><a title=English href="en/">English</a></li><li><a title=Français href="fr/">Français</a></li><li><a title=Italiano href="it/">Italiano</a></li><li><a title=Deutsch href="de/">Deutsch</a></li><li><a title=Português href="pt/">Português</a></li></ul>
+
+</li>
+</li>
+
+    <div class="header-contacto"><div class="header-contacto-mail">
+    <a href="mailto:tuemail@holaluis.com"><i class="fa fa-envelope"></i></a>
+    </div>
+    
+    <div class="header-contacto-tel"><i class="fa fa-phone">
+    </i> +34 641 30 75 31</div>
+    </div>
+
+    <div class="header-contacto"><div class="header-contacto-mail">
+    <a href="login.html"><i class="fa fa-user"></i></a>
+</div>
+
+</ul>
+
+<ul class="d-block d-lg-none">
+
+  <li><a class="show-submenu" href="javascript:void(0);">Nuestras Rutas <i class="icon-down-open-mini"></i></a><ul><li class="li_rutas">Rutas Premium</li><li><a href="camino-frances-desde-sarria/">Camino Francés desde Sarria</a></li><li><a href="camino-frances-desde-sarria-con-melide/">Camino Francés desde Sarria con Melide</a></li><li><a href="camino-portugues-desde-tui/">Camino Portugués desde Tui</a></li><li><a href="camino-ingles-desde-ferrol/">Camino Inglés desde Ferrol</a></li><li><a href="camino-de-santiago-a-fisterra/">Camino de Santiago a Fisterra</a></li><li><a href="camino-primitivo-desde-lugo/">Camino Primitivo desde Lugo</a></li><li><a href="camino-primitivo-desde-oviedo/">Camino Primitivo desde Oviedo</a></li><li><a href="camino-santiago-desde-roncesvalles-Santiago/">Camino Francés de Roncesvalles a Santiago</a></li><li><a href="camino-santiago-desde-roncesvalles/">Camino Francés de Roncesvalles a Logroño</a></li><li><a href="camino-santiago-desde-logrono/">Camino Francés de Logroño a Burgos</a></li><li><a href="camino-santiago-desde-burgos/">Camino Francés de Burgos a León</a></li><li><a href="camino-santiago-desde-leon/">Camino Francés desde León a Ponferrada</a></li><li><a href="camino-santiago-desde-ponferrada/">Camino Francés desde Ponferrada a Sarria</a></li><li><a href="camino-santiago-bicicleta-desde-leon/">Camino Francés en bici desde León</a></li><li><a href="camino-santiago-bicicleta-desde-ponferrada/">Camino Francés en bici desde Ponferrada</a></li><li><a href="camino-portugues-desde-oporto/">Camino Portugués desde Oporto</a></li><li><a href="camino-del-norte-desde-villalba/">Camino del Norte desde Vilalba</a></li><li><a href="camino-portugues-costa-desde-oporto/">Camino Portugués por la Costa desde Oporto</a></li><li><a href="camino-portugues-costa-desde-a-guarda/">Camino Portugués por la Costa desde A Guarda </a></li><li><a href="camino-portugues-costa-oporto-a-guarda/">Camino Portugués por la Costa desde Oporto a A Guarda</a></li><li><a href="via-plata-desde-ourense/">Vía de la Plata desde Ourense</a></li><li><a href="camino-santiago-bicicleta-desde-burgos/">Camino Francés en bici desde Burgos</a></li><li><a href="camino-santiago-bicicleta-desde-roncesvalles/">Camino Francés en bici desde Roncesvalles</a></li><li><a href="camino-frances-desde-sarria-perro/">Camino Francés con Perro</a></li><li><a href="camino-potugues-desde-oporto-bici/">Camino Portugués en bici desde Oporto</a></li><li class="li_rutas">Rutas Adventure</li><li><a href="camino-frances-desde-sarria-adventure/">Camino Francés desde Sarria</a></li><li><a href="camino-frances-desde-sarria-con-melide-adventure/">Camino Francés desde Sarria con Melide</a></li><li><a href="camino-portugues-desde-tui-adventure/">Camino Portugués desde Tui</a></li><li><a href="camino-de-santiago-a-fisterra-adventure/">Camino de Santiago a Fisterra</a></li></ul></li><li><a class="show-submenu" href="javascript:void(0);">Servicios <i class="icon-down-open-mini"></i></a><ul><li><a href="desayunos/">Desayunos</a></li><li><a href="cenas/">Cenas</a></li><li><a href="traslados-puntos-inicio/">Traslado a los puntos de inicio</a></li><li><a href="transporte-mochilas/">Transporte de mochilas</a></li><li><a href="traslados-aeropuerto-santiago/">Traslados al aeropuerto de Santiago</a></li><li><a href="garaje-santiago/">Garaje en Santiago</a></li></ul></li><li><a class="show-submenu" href="javascript:void(0);">Caminos <i class="icon-down-open-mini"></i></a><ul><li><a href="camino-frances/">Camino Francés</a></li><li><a href="camino-portugues/">Camino Portugués</a></li><li><a href="camino-ingles/">Camino Inglés</a></li><li><a href="camino-primitivo/">Camino Primitivo</a></li><li><a href="camino-de-santiago-en-bici/">Camino en Bicicleta</a></li><li><a href="camino-finisterre/">Camino de Finisterre</a></li><li><a href="/camino-frances-sarria-grupo" title="Camino en Grupo">Camino en Grupo</a></li></ul></li><li><a href="contacto/">Contacto</a></li><li classs="submenu"><a class="show-submenu"><i class="fa fa-globe"></i> Idiomas</a><ul><li><a title=English href="en/">English</a></li><li><a title=Français href="fr/">Français</a></li><li><a title=Italiano href="it/">Italiano</a></li><li><a title=Deutsch href="de/">Deutsch</a></li><li><a title=Português href="pt/">Português</a></li></ul></li>
+
+
+</ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+  <div class="login-container">
+    <img src="img/logo_home.png" alt="Tu Camino Ideal">
+    <h2><i class="fa fa-user"></i> Iniciar Sesión</h2>
+    <form id="login-form">
+      <div class="input-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Acceder</button>
+    </form>
+    <div class="footer-link">
+      ¿No tienes cuenta? <a href="registro.html">Regístrate</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("login-form").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      try {
+        const res = await fetch("http://localhost:3000/usuarios/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams({ username: email, password })
+        });
+
+        if (!res.ok) throw new Error("Email o contraseña incorrectos");
+
+        const data = await res.json();
+        localStorage.setItem("token", data.access_token);
+
+        alert("Inicio de sesión correcto");
+        window.location.href = "perfil.html";
+      } catch (err) {
+        alert(err.message);
+      }
+    });
+  </script>
+</body>
+</html>
