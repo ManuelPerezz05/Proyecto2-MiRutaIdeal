@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+python-dotenv
+psycopg2-binary
+gpxpy  # 👈 Añade esta línea
+python-jose
+passlib[bcrypt]
+email-validator
+python-multipart
+# creacion de usuario, hacer login, creacion del crud de usuarios,cambiar el idioma de la web automaticamene, que se puedan hacer reservas,  actualizar añadir, servidor de correo enviar un mensaje de bienvenida.
+
+# API de mapa, muestra la consulta, APP hecha
+
+#  al darle click en el mapa, que se enseñe la inforamcion junto conl la foto del hospedaje, hospiatal etc... 
+
+# M8 , M3 3 , M7 1,    
